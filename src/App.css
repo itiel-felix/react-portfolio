@@ -1,38 +1,20 @@
+:root {
+  --bg-color: #ffffff; /* Reemplaza #yourPrimaryColor con el código de color que prefieras */
+  --primary-color: #0a192f; /* Reemplaza #yourSecondaryColor con el código de color que prefieras */
+  --dark-primary-color: #040e25; /* Reemplaza #yourSecondaryColor con el código de color que prefieras */
+  --secondary-color: #50cbb0;
+  --accent-color: #e84545; /* Reemplaza #yourSecondaryColor con el código de color que prefieras */
+  --accent-secondary-color: #903749; /* Reemplaza #yourSecondaryColor con el código de color que prefieras */
+  --text-color: #000000; /* Reemplaza #yourTextColor con el código de color que prefieras */
+  --misc: #605f5e; /* Reemplaza #yourTextColor con el código de color que prefieras */
+
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  background-color: var(--bg-color);; /* Reemplaza #yourColor con el código de color que prefieras */
+  height: 100vh; /* Esto hace que el div ocupe toda la altura de la pantalla */
+  width: 100%; /* Esto hace que el div ocupe toda la anchura de la pantalla */
+  margin: 0; /* Esto elimina los márgenes */
+  padding: 0; /* Esto elimina el padding */
+  box-sizing: border-box; /* Esto asegura que el padding y el borde no aumenten el tamaño del div */
 }

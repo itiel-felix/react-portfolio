@@ -1,0 +1,90 @@
+.toolbar-container {
+  padding: 0 1rem;
+  height: 3rem;
+  background-color: var(--dark-primary-color);
+  /*border-bottom: 1px solid #0e4953;
+  box-shadow: 0 5px 20px rgba(255, 255, 255, 0.137);
+  position: relative;
+  z-index: 1;*/
+}
+.toolbar-links ul {
+  list-style-type: none; /* Esto elimina los puntos de la lista */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Esto hace que los elementos de la lista se muestren en línea */
+}
+
+.toolbar-links ul li {
+  margin-right: 10px; /* Esto agrega un poco de espacio entre los elementos de la lista */
+}
+.toolbar-links ul li a {
+  position: relative;
+  text-decoration: none;
+  color: var(--bg-color);
+}
+
+.toolbar-links ul li a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--accent-color);
+  transition: width 0.1s ease-in-out;
+}
+
+.toolbar-links ul li a:hover::before {
+  width: 100%;
+}
+
+/*     */
+.centered-container, .presentation-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentation-container{
+  background-color: var(--primary-color);
+  padding: 3rem;
+  padding-top:10rem;
+  padding-bottom:10rem
+
+}
+@media (max-width: 600px) {
+  .centered-container, .presentation-container {
+    flex-direction: column;
+  }
+  .presentation-container{
+    padding: 3rem;
+    padding-top: 3rem;
+  }
+}
+
+.picture{
+  width: 20rem;
+  height: 20rem;
+  border-radius: 100%;
+  overflow: hidden;
+  transform: scaleX(-1);
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.171);
+}
+.presentation {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: larger;
+  font-family: 'Consolas';
+  text-align: left;
+  color: var(--text-color);
+}
+
+
+/*GENERIC EFFECTS*/
+
+.hollow{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+}
