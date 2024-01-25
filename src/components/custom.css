@@ -53,14 +53,14 @@
   padding-bottom:10rem
 
 }
-@media (max-width: 600px) {
-  .centered-container, .presentation-container {
-    flex-direction: column;
-  }
-  .presentation-container{
-    padding: 3rem;
-    padding-top: 3rem;
-  }
+
+.presentation {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: larger;
+  font-family: 'Consolas';
+  text-align: left;
+  color: var(--text-color);
 }
 
 .picture{
@@ -71,15 +71,6 @@
   transform: scaleX(-1);
   box-shadow: 0 5px 10px rgba(255, 255, 255, 0.171);
 }
-.presentation {
-  margin-left: 2rem;
-  margin-right: 2rem;
-  font-size: larger;
-  font-family: 'Consolas';
-  text-align: left;
-  color: var(--text-color);
-}
-
 
 /*GENERIC EFFECTS*/
 
@@ -87,4 +78,17 @@
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .centered-container, .presentation-container {
+    flex-direction: column;
+  }
+  .presentation-container{
+    padding: 3rem;
+    padding-top: 3rem;
+  }
+  .social-icon{
+    padding-bottom: 2rem;
+  }
 }
