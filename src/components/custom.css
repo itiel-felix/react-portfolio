@@ -48,10 +48,8 @@
 
 .presentation-container{
   background-color: var(--primary-color);
-  padding: 3rem;
   padding-top:10rem;
   padding-bottom:10rem
-
 }
 
 .presentation {
@@ -85,8 +83,7 @@
     flex-direction: column;
   }
   .presentation-container{
-    padding: 3rem;
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
   .social-icon{
     padding-bottom: 2rem;

@@ -1,10 +1,48 @@
 .about-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--light-primary-color);
-    padding: 3rem;
-    padding-top:10rem;
-    padding-bottom:10rem
+}
+
+.about-container h1{
+    margin-right: 42rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 3rem;
+    font-family: 'Consolas';
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+.about-container p{
+    margin-right: 6rem;
+    padding-left: 6rem;
+    font-size: 1.5rem;
+    font-family: 'Consolas';
+    text-align: start;
+    color: var(--bg-color);
+
+}
+
+@media screen and (max-width: 600px) {
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    
+    }
+    .about-container h1 {
+        font-size: 2rem;
+        margin-right: 0;
+        padding-left: .5rem;
+    }
+    .about-container p{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 1.2rem;
+    }
+    
 }

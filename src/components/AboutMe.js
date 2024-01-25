@@ -3,18 +3,10 @@ import './aboutme.css';
 const AboutMe = () => {
     return (
         <div className='about-container' style={{}}>
-            <div className='presentation'>
-                <h1 style={{color:'white', fontSize:'1rem', color:'var(--secondary-color)'}} >
-                    Hi, my name is <br />
-                    <span style={{fontSize:'5rem', color:'white'}}> Itiel Felix
-                        </span>
-                        <br />
-                        and yes, I'm a <br />
-                    <span className='hollow' style={{fontSize:'5rem', fontWeight:''}}>Web Developer
-                        </span>
-                </h1>
-
-            </div>
+            <h1>About me</h1>
+            <p>
+                Skilled software development professional bringing great talents for software design, development and integration. Passionate about learning new technologies. Background writing code and developing web application
+            </p>
         </div>
     );
 }

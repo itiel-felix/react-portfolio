@@ -5,7 +5,7 @@ import './custom.css';
 const Presentation = () => {
     const [hover, setHover] = useState({});
     return (
-        <div className='presentation-container' style={{}}>
+        <div className='presentation-container' >
             <div className='presentation'>
                 <h1 style={{ color: 'white', fontSize: '1rem', color: 'var(--secondary-color)' }} >
                     Hi, my name is <br />

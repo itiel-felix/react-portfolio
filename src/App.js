@@ -7,8 +7,10 @@ function App() {
   return (
     <div className="App">
       <Toolbar className='Header' />
+      <div className='content'>
         <Presentation />
         <AboutMe />
+        </div>
 
     </div>
   );
